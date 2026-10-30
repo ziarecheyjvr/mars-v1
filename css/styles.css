@@ -522,20 +522,55 @@ h3 { font-size: clamp(1.5rem, 2.4vw, 1.9rem); }
 /* Booking ---------------------------------------------------------------- */
 
 .booking {
-  display: grid;
-  grid-template-columns: .85fr 1.15fr;
-  gap: clamp(32px, 5vw, 64px);
-  align-items: start;
-}
-.booking__frame {
-  background: var(--white);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
+  position: relative;
   overflow: hidden;
-  border: 1px solid var(--line);
+  isolation: isolate;
+  padding: clamp(40px, 6vw, 72px) clamp(20px, 5vw, 64px);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 0% 100%, rgba(214,32,42,.35), transparent 45%),
+    radial-gradient(circle at 100% 0%, rgba(214,32,42,.2), transparent 40%),
+    var(--ink-2);
+  color: #c9ccd3;
 }
-.booking__frame iframe { width: 100%; height: 720px; border: 0; display: block; }
-.booking__info .contact-list { margin-top: 30px; }
+.booking .section-head { margin-bottom: clamp(28px, 4vw, 40px); }
+.booking h2 { color: var(--white); }
+.booking .lead { color: #9ea3ad; }
+
+/* The BookMyGarage widget can't be styled from here and doesn't resize itself.
+   Up to ~660px wide it stacks or wraps its heading (content ≈ 205px tall);
+   wider, it fits on one line (≈ 160px), so the frame matches each layout. */
+.booking__frame {
+  container-type: inline-size;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 12px 8px 8px;
+  background: var(--white);
+  border-radius: 18px;
+  border-top: 4px solid var(--red);
+  box-shadow: 0 30px 60px -24px rgba(0,0,0,.7);
+}
+.booking__frame iframe {
+  display: block;
+  width: 100%;
+  height: 215px;
+  border: 0;
+}
+@container (min-width: 660px) {
+  .booking__frame iframe { height: 168px; }
+}
+
+.booking__meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 28px;
+  margin-top: 28px;
+  font-size: .92rem;
+}
+.booking__meta > * { display: inline-flex; align-items: center; gap: 8px; }
+.booking__meta svg { width: 16px; height: 16px; color: var(--red); flex: none; }
+.booking__meta a:hover { color: var(--white); }
 
 /* Reviews CTA ------------------------------------------------------------ */
 
@@ -1082,42 +1117,6 @@ h3 { font-size: clamp(1.5rem, 2.4vw, 1.9rem); }
   pointer-events: none;
 }
 
-/* Keeps the tilted marquee from widening the page (clip, unlike hidden, leaves sticky intact) */
-main { overflow-x: clip; }
-
-/* Marquee */
-.marquee {
-  overflow: hidden;
-  background: var(--ink);
-  color: var(--white);
-  padding: 22px 0;
-  margin-top: clamp(64px, 8vw, 96px);
-  transform: rotate(-1.5deg) scale(1.02);
-  border-top: 3px solid var(--red);
-  border-bottom: 3px solid var(--red);
-}
-.marquee__track {
-  display: flex;
-  width: max-content;
-  animation: marquee 32s linear infinite;
-}
-.marquee:hover .marquee__track { animation-play-state: paused; }
-.marquee__item {
-  display: inline-flex;
-  align-items: center;
-  gap: 28px;
-  padding-right: 28px;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  letter-spacing: .04em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-.marquee__item:nth-child(even) { color: transparent; -webkit-text-stroke: 1.2px rgba(255,255,255,.7); }
-.marquee__item svg { width: 22px; height: 22px; color: var(--red); }
-@keyframes marquee { to { transform: translateX(-50%); } }
-
 /* Bento features */
 .feature { display: flex; flex-direction: column; }
 .feature--hero {
@@ -1309,7 +1308,6 @@ main { overflow-x: clip; }
 @media (max-width: 640px) {
   .feature--hero, .feature--wide { grid-column: auto; }
   .feature--wide { flex-direction: column; align-items: flex-start; }
-  .marquee { padding: 16px 0; }
   .mobile-bar { animation: introUp .8s var(--ease-out) 1.2s both; }
 }
 
@@ -1317,7 +1315,6 @@ main { overflow-x: clip; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; transition-delay: 0s !important; }
   .reveal, .intro, .line > span { opacity: 1; transform: none; }
   .reveal-img > * { clip-path: none; scale: 1; }
-  .marquee__track { animation: none; }
   html { scroll-behavior: auto; }
 }
 
@@ -1351,7 +1348,7 @@ main { overflow-x: clip; }
   .nav__link::after { display: none; }
 
   .features { grid-template-columns: 1fr 1fr; }
-  .tabs__panel, .values, .booking, .split, .location-grid { grid-template-columns: minmax(0, 1fr); }
+  .tabs__panel, .values, .split, .location-grid { grid-template-columns: minmax(0, 1fr); }
   .split--reverse .split__media { order: 0; }
   .stats__grid { grid-template-columns: 1fr 1fr; }
   .stat:nth-child(2) { border-right: 0; }
@@ -1381,7 +1378,7 @@ main { overflow-x: clip; }
   .tabs__list { width: 100%; border-radius: 18px; }
   .tabs__btn { flex: 1 1 calc(50% - 8px); padding: 12px 10px; }
   .footer__grid { grid-template-columns: 1fr; }
-  .booking__frame iframe { height: 640px; }
+  .booking__meta { flex-direction: column; align-items: center; text-align: center; }
   .stat { padding: 22px 18px; }
 
   .mobile-bar {
