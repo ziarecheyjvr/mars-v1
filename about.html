@@ -40,7 +40,7 @@
     </nav>
     <div class="header__cta">
       <a class="btn btn--outline" href="tel:01279653494"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call Us</a>
-      <a class="btn btn--primary" href="index.html#booking">Schedule a Repair</a>
+      <a class="btn btn--primary" href="index.html#booking" data-magnetic>Schedule a Repair</a>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
     </div>
   </div>
@@ -50,15 +50,15 @@
 <section class="page-hero">
   <div class="page-hero__bg"><img src="images/about-3.jpg" alt=""></div>
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>About Us</span></div>
-    <h1>About Us</h1>
-      <p>Matts Auto Repair Services is a family run local independent garage located in Bishops Stortford town centre</p>
+    <div class="breadcrumb intro"><a href="index.html">Home</a><span>/</span><span>About Us</span></div>
+    <h1><span class="line"><span>About Us</span></span></h1>
+    <p class="intro" style="--i:2">Matts Auto Repair Services is a family run local independent garage located in Bishops Stortford town centre</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container split">
-    <div class="split__media collage reveal">
+    <div class="split__media collage reveal" data-stagger>
       <img src="images/about-1.jpg" alt="MARS technician working under the bonnet" loading="lazy">
       <img src="images/about-2.jpg" alt="Technicians inspecting a car on the lift" loading="lazy">
       <img src="images/about-4.jpg" alt="The MARS van" loading="lazy">
@@ -69,10 +69,10 @@
       <p>Matts Auto Repair Services is a family-run independent garage situated in the heart of Bishops Stortford, driven by a strong passion for quality service. Our premises on Bryan Road CM23 2HR have been a staple of the community for the past ten years, building a sterling reputation based on word-of-mouth referrals and loyal customers.</p>
       <p>Our team of four highly skilled technicians possesses over 95 years of combined experience in the motor trade, including those who have attained the prestigious master technician level with Ford and Peugeot, spanning across multiple well-known brands.</p>
       <p>We pride ourselves on being an approved MOT station by the DVSA, making use of cutting-edge testing technology to ensure thorough on-site inspections without the need for external testing. Every vehicle that comes through our doors is treated with the utmost care and respect, as if it were our very own. Our many glowing 5-star customer reviews on numerous platforms serve as a testament to our unwavering commitment to excellence.</p>
-      <div class="highlights">
-        <div class="highlight"><strong>10</strong><span>years on Bryan Road</span></div>
-        <div class="highlight"><strong>4</strong><span>highly skilled technicians</span></div>
-        <div class="highlight"><strong>95+</strong><span>years combined experience</span></div>
+      <div class="highlights" data-stagger>
+        <div class="highlight reveal"><strong>10</strong><span>years on Bryan Road</span></div>
+        <div class="highlight reveal"><strong>4</strong><span>highly skilled technicians</span></div>
+        <div class="highlight reveal"><strong>95+</strong><span>years combined experience</span></div>
       </div>
     </div>
   </div>
@@ -92,24 +92,24 @@
 
 <section class="section">
   <div class="container">
-    <div class="gallery reveal">
-      <img src="images/about-3.jpg" alt="Technicians at work in the workshop" loading="lazy">
-      <img src="images/home-2.jpg" alt="Running vehicle diagnostics" loading="lazy">
-      <img src="images/home-3.png" alt="Inspecting a vehicle part" loading="lazy">
-      <img src="images/home-4.jpg" alt="Diagnostic equipment on an engine" loading="lazy">
+    <div class="gallery" data-stagger>
+      <div class="gallery__item reveal-img"><img src="images/about-3.jpg" alt="Technicians at work in the workshop" loading="lazy"></div>
+      <div class="gallery__item reveal-img"><img src="images/home-2.jpg" alt="Running vehicle diagnostics" loading="lazy"></div>
+      <div class="gallery__item reveal-img"><img src="images/home-3.png" alt="Inspecting a vehicle part" loading="lazy"></div>
+      <div class="gallery__item reveal-img"><img src="images/home-4.jpg" alt="Diagnostic equipment on an engine" loading="lazy"></div>
     </div>
   </div>
 </section>
 
 <section class="cta-band">
   <div class="container">
-    <div>
+    <div class="reveal">
       <h2>Too busy to come in?</h2>
       <p>Want to book your MOT? Fill in the form and we’ll come right back to you.</p>
     </div>
-    <div class="cta-band__actions">
-      <a class="btn btn--dark" href="contact.html">Contact Us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost" href="tel:01279653494"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> 01279 653494</a>
+    <div class="cta-band__actions reveal">
+      <a class="btn btn--dark" href="contact.html" data-magnetic>Contact Us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--ghost" href="tel:01279653494" data-magnetic><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> 01279 653494</a>
     </div>
   </div>
 </section>

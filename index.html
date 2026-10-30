@@ -40,7 +40,7 @@
     </nav>
     <div class="header__cta">
       <a class="btn btn--outline" href="tel:01279653494"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call Us</a>
-      <a class="btn btn--primary" href="index.html#booking">Schedule a Repair</a>
+      <a class="btn btn--primary" href="index.html#booking" data-magnetic>Schedule a Repair</a>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
     </div>
   </div>
@@ -48,35 +48,47 @@
 
 <main>
 <section class="hero">
-  <div class="hero__bg"><img src="images/about-2.jpg" alt="MARS mechanics working on a car in the Bishops Stortford workshop" fetchpriority="high"></div>
+  <div class="hero__bg"><img src="images/about-2.jpg" alt="MARS mechanics working on a car in the Bishops Stortford workshop" fetchpriority="high" data-parallax="0.18"></div>
   <div class="container">
     <div class="hero__content">
-      <span class="eyebrow">Car Mechanics · Bishops Stortford</span>
-      <h1>Matts Auto <em>Repair</em> Services</h1>
-      <p class="hero__text">Matts Auto Repair Services is a family run local independent garage located in Bishops Stortford town centre</p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#booking"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg> Schedule a Repair</a>
-        <a class="btn btn--ghost" href="tel:01279653494"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call Us</a>
+      <span class="eyebrow intro" style="--i:0">Car Mechanics · Bishops Stortford</span>
+      <h1><span class="line" style="--i:0"><span>Matts Auto <em>Repair</em></span></span><span class="line" style="--i:1"><span>Services</span></span></h1>
+      <p class="hero__text intro" style="--i:2">Matts Auto Repair Services is a family run local independent garage located in Bishops Stortford town centre</p>
+      <div class="hero__actions intro" style="--i:3">
+        <a class="btn btn--primary" href="#booking" data-magnetic><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg> Schedule a Repair</a>
+        <a class="btn btn--ghost" href="tel:01279653494" data-magnetic><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call Us</a>
       </div>
-      <div class="hero__badges">
+      <div class="hero__badges intro" style="--i:4">
         <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> DVSA-approved class 4 MOT test site</span>
         <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg> RMI Approved</span>
         <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg> 12-month warranty on repairs</span>
       </div>
     </div>
   </div>
+  <aside class="hero__card" aria-label="MOT tests">
+    <div class="hero__card-top">
+      <span class="hero__card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+      <div><small>DVSA Test Site Number</small><strong>10659</strong></div>
+    </div>
+    <p style="font-size:.88rem;margin-bottom:14px"><span class="live-dot"></span>Waiting slots can be booked in advance</p>
+    <div class="hero__card-price"><span>MOT tests from</span><b>£49.50</b></div>
+  </aside>
 </section>
 
 <section class="stats" aria-label="Experience">
   <div class="container">
     <div class="stats__grid reveal">
-      <div class="stat"><div class="stat__num">10</div><div class="stat__label">Years</div></div>
-      <div class="stat"><div class="stat__num">1</div><div class="stat__label">Beautiful workshop</div></div>
-      <div class="stat"><div class="stat__num">1000<span>'s</span></div><div class="stat__label">Happy Customers</div></div>
-      <div class="stat"><div class="stat__num">1000<span>'s</span></div><div class="stat__label">MOT's</div></div>
+      <div class="stat"><div class="stat__num" data-count="10">10</div><div class="stat__label">Years</div></div>
+      <div class="stat"><div class="stat__num" data-count="1">1</div><div class="stat__label">Beautiful workshop</div></div>
+      <div class="stat"><div class="stat__num" data-count="1000">1000<span>'s</span></div><div class="stat__label">Happy Customers</div></div>
+      <div class="stat"><div class="stat__num" data-count="1000">1000<span>'s</span></div><div class="stat__label">MOT's</div></div>
     </div>
   </div>
 </section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track"><span class="marquee__item">MOT's <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">General Servicing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">All Repairs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">Tyres <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">Wheel Alignment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">Air Conditioning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">Diagnostics <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">Recovery <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">MOT's <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">General Servicing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">All Repairs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">Tyres <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">Wheel Alignment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">Air Conditioning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">Diagnostics <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="marquee__item">Recovery <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div>
+</div>
 
 <section class="section" id="why">
   <div class="container">
@@ -84,36 +96,37 @@
       <span class="eyebrow">Why choose us</span>
       <h2>Why MAR's?</h2>
     </div>
-    <div class="features">
-      <article class="feature reveal">
+    <div class="features" data-stagger>
+      <article class="feature spotlight reveal feature--hero">
+        <div class="feature__bg"><img src="images/about-1.jpg" alt="" loading="lazy"></div>
         <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
-        <h3>Trustworthy</h3>
-        <p>As local Bishop's Stortford mechanics our reputation has grown throughout the years..</p>
+        <div><h3>Trustworthy</h3>
+        <p>As local Bishop's Stortford mechanics our reputation has grown throughout the years..</p></div>
       </article>
-      <article class="feature reveal">
+      <article class="feature spotlight reveal">
         <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg></div>
-        <h3>Modern Technology</h3>
-        <p>We have the latest equipment in the industry which help us get the best and accurate results for every customer.</p>
+        <div><h3>Modern Technology</h3>
+        <p>We have the latest equipment in the industry which help us get the best and accurate results for every customer.</p></div>
       </article>
-      <article class="feature reveal">
+      <article class="feature spotlight reveal">
         <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <h3>Local</h3>
-        <p>We are a local business that is here to serve the community.</p>
+        <div><h3>Local</h3>
+        <p>We are a local business that is here to serve the community.</p></div>
       </article>
-      <article class="feature reveal">
+      <article class="feature spotlight reveal">
         <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M15 8.5a2.5 2.5 0 0 0-5 0V15m-2 0h8m-8-3h5"/></svg></div>
-        <h3>Price Competitive</h3>
-        <p>You will not find a better car mechanics in the Bishops's Stortford for the price and service.</p>
+        <div><h3>Price Competitive</h3>
+        <p>You will not find a better car mechanics in the Bishops's Stortford for the price and service.</p></div>
       </article>
-      <article class="feature reveal">
+      <article class="feature spotlight reveal">
         <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-        <h3>Secure Location</h3>
-        <p>Based just outside the town centre of Bishops's Stortford our car garage site is large and secure.</p>
+        <div><h3>Secure Location</h3>
+        <p>Based just outside the town centre of Bishops's Stortford our car garage site is large and secure.</p></div>
       </article>
-      <article class="feature reveal">
+      <article class="feature spotlight reveal feature--wide">
         <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></div>
-        <h3>RMI Approval</h3>
-        <p>We are Retail Motor Industry approved so you know you are in safe hands.</p>
+        <div><h3>RMI Approval</h3>
+        <p>We are Retail Motor Industry approved so you know you are in safe hands.</p></div>
       </article>
     </div>
   </div>
@@ -185,28 +198,28 @@
 
 <section class="section section--alt">
   <div class="container values">
-    <div class="values__media reveal">
-      <img src="images/home-4.jpg" alt="Diagnostic equipment connected to an engine" loading="lazy">
+    <div class="values__media reveal-img">
+      <img src="images/home-4.jpg" alt="Diagnostic equipment connected to an engine" loading="lazy" data-parallax="0.06">
     </div>
     <div>
       <div class="section-head reveal" style="margin-bottom:32px">
         <span class="eyebrow">What drives us</span>
         <h2>Our Core Values</h2>
       </div>
-      <div class="values__list">
-        <article class="value reveal">
+      <div class="values__list" data-stagger>
+        <article class="value spotlight reveal">
           <span class="value__num">01</span>
           <div><h3>Delivering the Best</h3><p>We make sure that every job is checked, double checked... and then checked again before we sign it off</p></div>
         </article>
-        <article class="value reveal">
+        <article class="value spotlight reveal">
           <span class="value__num">02</span>
           <div><h3>Car Lovers</h3><p>All of our Bishops Storftord mechanics are car enthusiast and it reflects in our work.</p></div>
         </article>
-        <article class="value reveal">
+        <article class="value spotlight reveal">
           <span class="value__num">03</span>
           <div><h3>The Best Service</h3><p>Our management team look closely at our customer service and love to hear feedback so they can continue to provide the best auto repairs in Bishops Stortford.</p></div>
         </article>
-        <article class="value reveal">
+        <article class="value spotlight reveal">
           <span class="value__num">04</span>
           <div><h3>Customer Loyalty</h3><p>We think if we provide the best service at competitive prices that our customers will always chose us as their mechanics based in Bishops Stortford.</p></div>
         </article>
@@ -248,13 +261,13 @@
 
 <section class="cta-band">
   <div class="container">
-    <div>
+    <div class="reveal">
       <h2>Too busy to come in?</h2>
       <p>Want to book your MOT? Fill in the form and we’ll come right back to you.</p>
     </div>
-    <div class="cta-band__actions">
-      <a class="btn btn--dark" href="contact.html">Contact Us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost" href="tel:01279653494"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> 01279 653494</a>
+    <div class="cta-band__actions reveal">
+      <a class="btn btn--dark" href="contact.html" data-magnetic>Contact Us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--ghost" href="tel:01279653494" data-magnetic><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> 01279 653494</a>
     </div>
   </div>
 </section>
